@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuAppleStore</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* HERO */
+    .hero {
+     text-align: center;
+      padding: 80px 20px;
+      background-color: #f5f5f5;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #005bb5;
+    }
+
+    /* COLECCIONES */
+    .colecciones {
+      display: flex;
+      gap: 20px;
+      margin: 60px 0;
+    }
+
+    .card {
+       flex: 1;
+      background-color: #76a6ee;
+      border: 1px solid #ebe8e8;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+     margin-top: 0;
+    }
+
+
+    .card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card span {
+      background: #bd8d8d;
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #e0dcdc;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    /* BENEFICIOS */
+    .beneficios {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: #7a72eb;
+      color: rgb(5, 0, 0);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .beneficios {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <h1> TuAppleStore</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productes.html">Productos</a>
+      <a href="contacte.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Tu mundo Apple en un solo lugar</h2>
+      <p>Explora los nuevos iPhone, Mac y accesorios oficiales con envío rápido y garantía total.
+      </p>
+      <button>Ver catálogo</button>
+    </section>
+
+    <!-- COLECCIONES -->
+    <section class="colecciones">
+      <div class="card">
+        <h3>Nuevos iPhone</h3>
+        <p>El iPhone 17  y el iPhone 17 Pro llegan pisando fuerte con un rediseño total desde la propia base.
+            
+        </p>
+        <span>#innovación</span>
+        <span>#rendimiento</span>
+      </div>
+
+      <div class="card">
+        <h3>Accesorios</h3>
+        <p>Fundas, cargadores y AirPods diseñados para tu estilo de vida Apple.</p>
+        <span>#original</span>
+        <span>#compatible</span>
+      </div>
+
+      <div class="card">
+        <h3>Mac y iPad</h3>
+        <p>Potencia, diseño y productividad en todos tus dispositivos.</p>
+        <span>#creatividad</span>
+        <span>#eficiencia</span>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="beneficios">
+      <div>🚚 Envío 48h</div>
+      <div>🔁 Cambios gratuitos</div>
+      <div>💳 Pago seguro</div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 TuAppleStore · info@tuapplestore.com · Inspirado en Apple 🍏
+  </footer>
+</body>
+</html>

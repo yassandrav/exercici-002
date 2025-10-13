@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuAppleStore | Productos</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .filtros {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .filtros span {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .filtros span:hover {
+      background-color: #eee;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .producto {
+      flex: 1 1 260px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .producto img {
+       width: 140px;
+       height: 150px;
+       object-fit: cover; /* o 'contain' si no quieres que se recorte */
+       border-radius: 6px;
+    }
+
+    .producto h3 {
+       margin: 15px 0 5px;
+      font-size: 18px;
+    }
+
+    .producto p {
+      font-size: 16px;
+      color: #0071e3;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1> TuAppleStore</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productes.html">Productos</a>
+      <a href="contacte.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="filtros">
+      <span>Todos</span>
+      <span>iPhone</span>
+      <span>Mac</span>
+      <span>iPad</span>
+      <span>Accesorios</span>
+    </div>
+
+    <section class="productos">
+      <div class="producto">
+        <img src="https://dam.elcorteingles.es/producto/www-001094612301054-06.jpg?impolicy=Resize&width=1200&height=1200" alt="iPhone 17 Pro" > 
+        <h3>iPhone 17 Pro</h3>
+        <p>1.319 €</p>
+      </div>
+
+      <div class="producto">
+        <img src="https://dam.elcorteingles.es/producto/www-001015215425214-00.jpg?impolicy=Resize&width=1200&height=1200" alt="MacBook Air 15">
+        <h3>MacBook Pro</h3>
+        <p>1.929 €</p>
+      </div>
+
+      <div class="producto">
+        <img src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202405/09/00115217011467____11__1200x1200.jpg?impolicy=Resize&width=900" alt="iPad Pro">
+        <h3>iPad Pro</h3>
+        <p>1.199 €</p>
+      </div>
+    
+      <div class="producto">
+        <img src="https://dam.elcorteingles.es/producto/www-001015215126309-00.jpg?impolicy=Resize&width=1200&height=1200" alt="iMac 24">
+        <h3> iMac 24</h3>
+        <p>1.519 €</p>
+      </div>
+
+      <div class="producto">
+        <img src="https://dam.elcorteingles.es/producto/www-001038545742751-00.jpg?impolicy=Resize&width=1200&height=1200" alt="AirPods Pro 3">
+        <h3>AirPods Pro 3</h3>
+        <p>249 €</p>
+      </div>
+
+      <div class="producto">
+        <img src="https://dam.elcorteingles.es/producto/www-001038545858334-00.jpg?impolicy=Resize&width=1200&height=1200" alt="AirPods Max">
+        <h3> AirPods Max</h3>
+        <p>529 €</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2025 TuAppleStore · info@tuapplestore.com
+  </footer>
+</body>
+</html>
+
