@@ -6,95 +6,109 @@
     <title>Contacto - TuAppleStore</title>
     <link rel="stylesheet" href="global.css">
     <style>
-        .contacto-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
-        .contacto-form {
-            flex: 2;
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-        }
-        .contacto-form input,
-        .contacto-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        .contacto-form button {
-            padding: 10px 20px;
-            background: #0071e3;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        .contacto-info {
-            flex: 1;
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-        }
-        .contacto-info h3 {
-            margin-top: 0;
-        }
-        iframe {
-            border: 0;
-            border-radius: 8px;
-        }
-    </style>
+      
+      .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px; /* espacio pequeño para no chocar con el header */
+ }  
+
+         .contacto-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contacto-form, .contacto-info {
+      padding: 20px;
+    }
+
+    .contacto-form {
+      flex: 2;
+    }
+
+    .contacto-info {
+      flex: 1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgb(147, 163, 247);
+      padding: 10px;
+      z-index: 10;
+    }
+
+    main {
+      margin-top: 70px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgb(147, 163, 247);
+      margin-top: 20px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  </style>
 </head>
+
 <body>
-    <header style="position: fixed; top: 0; width: 100%; background: white; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <h1>TuAppleStore</h1>
-        <nav>
-            <a href="índice.html">Inicio</a> |
-            <a href="productes.html">Productos</a> |
-            <a href="contacte.html">Contacto</a>
-        </nav>
-    </header>
+  <header>
+    <h1>TuAppleStore</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productes.html">Productos</a>
+      <a href="contacte.html">Contacto</a>
+    </nav>
+  </header>
 
-    <main style="margin-top: 70px;">
-        <h2 style="text-align: center;">Contacto</h2>
-        <div class="contacto-container">
-            <!-- Columna A: Formulario -->
-            <div class="contacto-form">
-                <h3>Envíanos un mensaje</h3>
-                <form>
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea rows="5" placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+  <main class="container">
+    <h2 style="text-align:center;">Contacto</h2>
 
-            <!-- Columna B: Información + mapa -->
-            <div class="contacto-info">
-                <h3>Ubicación</h3>
-                <p><strong>Dirección:</strong> Passeig de Gràcia, 92, 08008 Barcelona, España</p>
-                <p><strong>Horario:</strong> Lunes - Viernes, 9:00 - 18:00</p>
-                <p><strong>Teléfono:</strong> +34 600 000 000</p>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.732333704897!2d2.1666746156761563!3d41.391090879263075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f3e3f4b8a1%3A0xa2f4b3c1d5e6f7!2sPasseig%20de%20Gr%C3%A0cia%2C%2092%2C%2008008%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1696983745811!5m2!1ses!2ses" 
-                    width="100%" 
-                    height="300">
-                </iframe>
-            </div>
-        </div>
-    </main>
+    <div class="contacto-container">
+      <!-- Columna A: Formulario -->
+      <div class="contacto-form">
+        <h3>Envíanos un mensaje</h3>
+        <form>
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="5" placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
 
-    <footer style="text-align: center; padding: 10px; background: #f4f4f4; margin-top: 20px;">
-        <p>© 2025 TuAppleStore | contacto@tuapplestore.com</p>
-    </footer>
+      <!-- Columna B: Información de contacto -->
+      <div class="contacto-info">
+        <h3>Ubicación</h3>
+        <p><strong>Dirección:</strong> Passeig de Gràcia, 92, 08008 Barcelona, España</p>
+        <p><strong>Horario:</strong> Lunes - Viernes, 9:00 - 18:00</p>
+        <p><strong>Teléfono:</strong> +34 600 000 000</p>
+        <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.732333704897!2d2.1666746156761563!3d41.391090879263075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f3e3f4b8a1%3A0xa2f4b3c1d5e6f7!2sPasseig%20de%20Gr%C3%A0cia%2C%2092%2C%2008008%20Barcelona!5e0!3m2!1ses!2ses!4v1696983745811!5m2!1ses!2ses"
+       width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe> 
+    </div>
+  </main>
+
+  <footer>
+    © 2025 TuAppleStore · info@tuapplestore.com
+  </footer>
 </body>
 </html>
-
